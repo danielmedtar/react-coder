@@ -1,17 +1,15 @@
 import Nav from "./Nav"
 
-function Header(parametro) {
-
-    const { titulo, edad } = parametro
+function Header({titulo,edad,links}) {
     
     return (
         <>
             <header>
                 <h1>{titulo}</h1>
                 <p>{edad}</p>
+
+                <Nav links={links} />
             </header>
-            
-            <Nav/>
         </>
     )
 }

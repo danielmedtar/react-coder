@@ -1,12 +1,12 @@
 import Nav from "./Nav"
 
-const Footer = ({data: {copyright,author}}) => {
-    console.log(copyright,author);
+const Footer = ({links,data:{copyright,author}}) => {
+    
     return (
         <>
             <footer>
                 <p>{copyright} - {author}</p>
-                <Nav/>
+                <Nav links={links} />
             </footer>
         </>
     )

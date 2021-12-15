@@ -1,13 +1,11 @@
-function Nav() {
+const Nav = ({links}) => {
+
     return (
-                <nav>
-                    <ul>
-                        <li>nav 1</li>
-                        <li>nav 2</li>
-                        <li>nav 3</li>
-                        <li>nav 4</li>
-                    </ul>
-                </nav>
+        <nav>
+            {links.map((elemento, indice) => {
+                return <a href={`/${elemento}`}>{elemento}</a>
+            })}
+        </nav>
     )
 }
 
