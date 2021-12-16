@@ -1,11 +1,11 @@
-const Main = ({titulo, children}) => {
+import ItemListContainer from "./ItemListContainer"
+
+const Main = ({titulo}) => {
     return (
         <>
             <main>
-                <header>
-                    <h2>{titulo}</h2>
-                </header>
-                {children}
+                <h2>{titulo}</h2>
+                <ItemListContainer greeting="Bienvenido"/>
             </main>
         </>
     )

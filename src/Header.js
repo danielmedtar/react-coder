@@ -1,12 +1,11 @@
 import Nav from "./Nav"
 
-function Header({titulo,edad,links}) {
+function Header({titulo,links}) {
     
     return (
         <>
             <header>
                 <h1>{titulo}</h1>
-                <p>{edad}</p>
 
                 <Nav links={links} />
             </header>

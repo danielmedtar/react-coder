@@ -4,7 +4,6 @@ import Main from "./Main";
 
 function App() {
     const titulo = "E-Commerce"
-    const edad = 30
 
     const footerData = {
         copyright : "Copyright 2021",
@@ -18,7 +17,7 @@ function App() {
     return (
         <>
 
-            <Header titulo={titulo} edad={edad} links={array} />
+            <Header titulo={titulo} links={array} />
             
             <Main titulo={home_titulo}>
                 <form>
